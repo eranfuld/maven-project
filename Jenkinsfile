@@ -8,7 +8,6 @@
 8.	stages{
 9.	        stage('Build'){
 10.	            steps {
-11.	                sh 'mvn clean package'
                     echo 'Performing maven clean and package...'
 12.	            }
 13.	            post {
