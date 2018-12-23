@@ -4,8 +4,7 @@ pipeline {
         stage('Build'){
             steps {
 			bat
-				 'cd c:\\git\\repos\\maven-project'
-                 'mvn clean package'
+				 'mvn -f c:\\git\\repos\\maven-project clean package'
             }
             post {
                 success {
