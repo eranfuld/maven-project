@@ -6,10 +6,13 @@
 	    }
 	 
 	stages{
-	        stage('Build'){
+			stage('Initialize'){
 	            steps {
 					sh 'cd /c/git/repos/maven-project'
-	                sh 'mvn clean package'
+	            }
+	        stage('Build'){
+	            steps {
+					sh 'mvn clean package'
                 }
 	            post {
 	                success {
