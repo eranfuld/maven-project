@@ -8,6 +8,7 @@
 	stages{
 	        stage('Build'){
 	            steps {
+					cd c:\git\repos\maven-project
 	                sh 'mvn clean package'
                 }
 	            post {
