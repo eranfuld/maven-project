@@ -10,6 +10,7 @@
 	            steps {
 					sh 'cd /c/git/repos/maven-project'
 	            }
+			}
 	        stage('Build'){
 	            steps {
 					sh 'mvn clean package'
