@@ -13,7 +13,7 @@ pipeline {
             }
             post {
                 success {
-                    archiveArtifacts artifacts: 'C:\\git\\repos\\maven-project\\webapp\\target'
+                    archiveArtifacts artifacts: 'C:\\git\\repos\\maven-project\\webapp\\target\\*.war'
                 }
             }
         }
